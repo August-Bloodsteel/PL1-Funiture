@@ -1,0 +1,13 @@
+.text h1
+{
+    padding-top: 100px;
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+.row .card
+{
+    border: none;
+}
