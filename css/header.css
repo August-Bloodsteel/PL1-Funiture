@@ -9,10 +9,41 @@
     font: normal 400 20px/24px var(--inter);
     padding: 1.7rem;
     color: white;
+    transition: 0.1s;
+}
+
+.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link::after{
+    font-weight: 400;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: 10px auto 0px auto;
+    transition: 0.5s;
+}
+
+.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link:hover{
+    font-weight: 800;
+}
+
+.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link:hover::after{
+    width: 90%;
+        
 }
 
 .header_area .main_menu .navbar .navbar-nav .nav-item .nav-link.active{
     font: normal 800 20px/24px var(--inter);
+}
+
+.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link.active::after{
+    content: '';
+    width: 90%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: 10px auto 0px auto;
+        
 }
 
 /* End Navbar */
