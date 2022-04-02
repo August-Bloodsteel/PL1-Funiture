@@ -1,0 +1,15 @@
+/* CSS Variable */
+@import url(./partials/_variables.css);
+
+/* Start Navbar */
+
+.header_area .main_menu .navbar{
+    padding: 2.25rem 4.375rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    
+}
+
+/* End Navbar */
