@@ -1,29 +1,12 @@
 /* CSS Variable */
 @import url(./partials/_variables.css);
 
-/* Start Navbar */
+@import url(./header.css);
 
-.header_area .main_menu .navbar{
-    padding: 2.25rem 4.375rem;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+/* Responsive */
+@media(max-width: 700px){
+
+    .header_area .main_menu .navbar{
+        padding: 0%;
+    }
 }
-
-.header_area .main_menu .nav-item .nav-link{
-    font: normal 400 20px/24px var(--inter);
-    color: white;
-}
-
-/* End Navbar */
-
-/* Start Banner */
-
-.header_area{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../img/banner.png);
-    background-position: center;
-    background-size: cover;
-    overflow-x: hidden;
-}
-
-/* End Banner */

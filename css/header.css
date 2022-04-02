@@ -1,0 +1,31 @@
+/* Start Navbar */
+
+.header_area .main_menu .navbar{
+    padding: 2.25rem 4.375rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link{
+    font: normal 400 20px/24px var(--inter);
+    padding: 1.7rem;
+    color: white;
+}
+
+.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link.active{
+    font: normal 800 20px/24px var(--inter);
+}
+
+/* End Navbar */
+
+/* Start Banner */
+
+.header_area{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* End Banner */
