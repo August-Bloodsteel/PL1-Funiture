@@ -1,0 +1,47 @@
+.text h1
+{
+    padding-top: 100px;
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 120%;
+    color: #353C35;
+}
+
+
+
+.body
+{
+    height: 81.16vh;
+    /* background-color: aqua; */
+}
+
+
+
+.about .services
+{
+    width: 21rem;
+    transition:box-shadow .7s ease ;
+    display: inline-block;
+    text-align: justify;
+ 
+}
+
+
+.about .services h5
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: #353C35;
+}
+.about .services p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
