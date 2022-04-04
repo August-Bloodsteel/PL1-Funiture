@@ -11,14 +11,12 @@
 .main-card
 {
     
-    /* background-color: rgb(255, 0, 0); */
-    overflow: hidden;
+
+    height: 81.16vh;
+    width: 1000px;
+    /* overflow: hidden; */
 }
 
-.main-card .produk-card
-{
-    z-index: 5;
-}
 
 .main-card .produk-card .kotak2
 {
