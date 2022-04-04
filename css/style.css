@@ -3,12 +3,14 @@
 
 @import url(./header.css);
 
-@import url(./footer.css);
+
 
 @import url(./about.css);
 
 @import url(./produk.css);
 @import url(./people.css);
+
+@import url(./footer.css);
 /* Responsive */
 @media(max-width: 700px){
 
