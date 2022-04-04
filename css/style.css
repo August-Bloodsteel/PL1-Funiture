@@ -3,15 +3,12 @@
 
 @import url(./header.css);
 
-<<<<<<< HEAD
 @import url(./footer.css);
 
-=======
 @import url(./about.css);
 
 @import url(./produk.css);
 @import url(./people.css);
->>>>>>> radit
 /* Responsive */
 @media(max-width: 700px){
 
