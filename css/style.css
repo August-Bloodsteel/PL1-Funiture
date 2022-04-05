@@ -3,19 +3,12 @@
 
 @import url(./header.css);
 
-
-
 @import url(./about.css);
 
 @import url(./produk.css);
+
 @import url(./people.css);
+
 @import url(./help.css);
 
 @import url(./footer.css);
-/* Responsive */
-@media(max-width: 700px){
-
-    .header_area .main_menu .navbar{
-        padding: 0%;
-    }
-}
