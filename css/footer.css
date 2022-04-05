@@ -75,3 +75,15 @@
 .footer_area .footer_content .subscribe_box .btn_sub:hover{
     box-shadow: var(--shadow);
 }
+
+
+/* responsive */
+
+@media(max-width: 700px)
+{
+    .row
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
