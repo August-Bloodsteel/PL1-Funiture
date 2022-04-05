@@ -36,9 +36,42 @@
     letter-spacing: 0.005em;
 }
 
+.footer_area .footer_content .kolom3{
+    margin-left:-27px;
+}
 
 .footer_area .footer_content i.bi{
     size: 110%;
     color: white;
     padding-right: 23px;
+}
+
+.footer_area .footer_content .subscribe_box{
+    width: 334px;
+    border-radius: 32px;
+    background-color: white;
+}
+
+.footer_area .footer_content .subscribe_box .form_sub{
+    position: relative;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+}
+
+.footer_area .footer_content .subscribe_box .btn_sub{
+    border: none;
+    border-radius: 32px;
+    outline: none;
+    margin: 2px;
+    width: 107px;
+    background-color: rgba(255, 122, 0, 1);
+    font: normal 700 14px/50% var(--inter);
+    color: white;
+    transition: 0.5s;
+}
+
+.footer_area .footer_content .subscribe_box .btn_sub:hover{
+    box-shadow: var(--shadow);
 }
