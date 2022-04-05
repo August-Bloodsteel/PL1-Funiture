@@ -45,3 +45,42 @@
     font-size: 18px;
     line-height: 150%;
 }
+
+
+/* responsive */
+
+@media(max-width: 700px)
+{
+    .about .mantap
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about .mantap h5
+    {
+        font-size: 24px;
+    }
+
+    .text h1
+    {
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .services
+    {
+        width: 18rem;
+        display: inline-block;
+        text-align: justify;
+    
+    }
+
+    .about
+    {
+        display: flex;
+        justify-content: center;
+    }
+}

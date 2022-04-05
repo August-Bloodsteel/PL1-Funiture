@@ -104,3 +104,26 @@
     left: -20px;
 }
 
+/* responsive */
+
+@media(max-width: 700px)
+{
+    .special h4
+    {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .main-card .gg
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .siap
+    {
+        margin-top: 600px;
+    }
+
+}
