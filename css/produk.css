@@ -121,6 +121,12 @@
 
     }
 
+    /* .main-card
+    {
+        display: flex;
+        justify-content: center;
+    } */
+
     .siap
     {
         margin-top: 600px;
