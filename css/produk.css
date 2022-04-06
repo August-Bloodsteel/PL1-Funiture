@@ -132,4 +132,40 @@
         margin-top: 600px;
     }
 
+    .main-card .produk-card .gg .kotak-luar
+    {
+        margin-top: 50px;
+    }
+
+    .cart-in img
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+    .cart-in h5
+    {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        color: white;
+        padding-left: 10px;
+    }
+
+    .cart-in
+    {
+        width: 145.48px;
+        height: 41.8px;
+        background: #FF7A00;
+        border-radius: 12px;
+    }
+
+    .main-card
+    {
+        padding-bottom: 100px;
+    }
+
+
 }
