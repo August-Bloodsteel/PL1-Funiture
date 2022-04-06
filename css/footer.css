@@ -10,7 +10,10 @@
 }
 
 .footer_area .footer_content .row.copy{
-    font: normal 400 12px/150% var(--inter);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
     letter-spacing: 0.005em;
 }
 
