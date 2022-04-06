@@ -105,6 +105,10 @@ nav i{
     margin-top: 80px;
 }
 
+.header_area .main_site .main_content .btn_main.ms-auto{
+    margin: 0 0 0 0;
+}
+
 .header_area .main_site .main_content .btn_main .buy_btn{
     display: inline-block;
     text-decoration: none;
@@ -155,7 +159,7 @@ nav i{
     line-height: 150%;
 }
 
-.header_area .main_site .main_content .btn_main .wa_btn{
+.header_area .main_site .main_content .wa_btn{
     display: inline-block;
     text-decoration: none;
     border-radius: 24px;
@@ -163,7 +167,6 @@ nav i{
     color: white;
     width: 168.89px;
     height: 54px;
-    position: relative;
     cursor: pointer;
     transition: 0.5s;
 
@@ -172,13 +175,16 @@ nav i{
     justify-content: center;
     align-items: center;
     padding: 12px 16px;
-    margin-bottom: 50px;
+
 
     font-family: 'Inter';
     font-weight: 600;
     font-size: 20px;
     line-height: 150%;
-    z-index: 1;
+
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
 }
 
 .header_area .main_site .main_content .btn_main .wa_btn>i{
@@ -201,7 +207,7 @@ nav i{
 
 /* Responsive */
 
-@media (max-width:900px) {
+@media (max-width:992px) {
     /* Start Navbar */
 
     .nav-links ul li{
@@ -256,29 +262,58 @@ nav i{
     /* Start Banner */
 
     .header_area .main_site .main_content .main_quote .quote{
-        font-family: 'Inter';
-        font-weight: 800;
-        font-size: 36px;
+        font-size: 78px;
         line-height: 100%;
-        color: white;
         padding: 0 0 0 0;
     }
 
     .header_area .main_site .main_content .main_quote .quote_folup{
         font-family: 'Inter';
         font-weight: 500;
-        font-size: 12px;
+        font-size: 18px;
         line-height: 150%;
         color: white;
         margin-top: 17px;
         
     }
 
+    .header_area .main_site .main_content .btn_main{
+        margin-top: 22px;
+    }
+
+    .header_area .main_site .main_content .btn_main .buy_btn{
+        width: 139px;
+        height: 46px;
+
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .header_area .main_site .main_content .btn_main .explore_btn{
+        width: 139px;
+        height: 46px;
+
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .header_area .main_site .main_content .wa_btn{
+        width: 139px;
+        height: 46px;
+        
+        font-size: 14px;
+        line-height: 150%;
+        bottom: 40px;
+        right: 40px;
+
+        z-index: 2;
+    }
+
 
     /* End Banner */
 }
 
-@media (max-width: 700px){
+@media (max-width: 576px){
 
     /* Start Navbar */
 
@@ -334,11 +369,8 @@ nav i{
     /* Start Banner */
 
     .header_area .main_site .main_content .main_quote .quote{
-        font-family: 'Inter';
-        font-weight: 800;
         font-size: 36px;
         line-height: 100%;
-        color: white;
         padding: 0 0 0 0;
     }
 
@@ -413,29 +445,16 @@ nav i{
         line-height: 150%;
     }
 
-    .header_area .main_site .main_content .btn_main .wa_btn{
-        display: inline-block;
-        text-decoration: none;
-        border-radius: 24px;
-        background-color: rgba(255, 122, 0, 1);
-        color: white;
+    .header_area .main_site .main_content .wa_btn{
         width: 120px;
         height: 37px;
-        position: relative;
-        cursor: pointer;
-        transition: 0.5s;
-    
-        margin-top: 200px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 12px 16px;
-    
-        font-family: 'Inter';
-        font-weight: 600;
+        
         font-size: 14px;
         line-height: 150%;
+        bottom: 40px;
+        right: 40px;
+
+        z-index: 2;
     }
     
     /* End Banner */
