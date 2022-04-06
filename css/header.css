@@ -52,58 +52,6 @@ nav i{
     width: 80%;
 }
 
-/* .header_area .main_menu .navbar{
-    padding: 2.25rem 4.375rem;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-.header_area .main_menu .navbar .navbar-brand{
-    width: 162px;
-    height: 48px;
-}
-
-
-.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link{
-    font: normal 400 20px/24px var(--inter);
-    padding: 1.7rem;
-    color: white;
-    transition: 0.1s;
-}
-
-.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link::after{
-    font-weight: 400;
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: white;
-    display: block;
-    margin: 10px auto 0px auto;
-    transition: 0.5s;
-}
-
-.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link:hover{
-    font-weight: 800;
-}
-
-.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link:hover::after{
-    width: 90%;
-        
-}
-
-.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link.active{
-    font: normal 800 20px/24px var(--inter);
-}
-
-.header_area .main_menu .navbar .navbar-nav .nav-item .nav-link.active::after{
-    content: '';
-    width: 90%;
-    height: 2px;
-    background: white;
-    display: block;
-    margin: 10px auto 0px auto;
-        
-} */
-
 /* End Navbar */
 
 /* Start Banner */
@@ -118,8 +66,12 @@ nav i{
     padding-bottom: 100px;
 }
 
+.header_area .main_site{
+    margin-top: 80px;
+}
+
 .header_area .main_site .main_content .main_quote{
-    width: 581px;
+    /* width: 581px; */
     
     background: rgba(53, 60, 53, 0.45);
     backdrop-filter: blur(8px);
@@ -129,20 +81,27 @@ nav i{
 }
 
 .header_area .main_site .main_content .main_quote .quote{
-    font: normal 800 96px/100% var(--inter);
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 100%;
     color: white;
 }
 
 
 .header_area .main_site .main_content .main_quote .quote_folup{
-    font: normal 500 20px/150% var(--inter);
-    color: white;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: white
     
 }
 
 .header_area .main_site .main_content .btn_main{
     margin-top: 80px;
 }
+
 .header_area .main_site .main_content .btn_main .buy_btn{
     display: inline-block;
     text-decoration: none;
@@ -204,8 +163,10 @@ nav i{
     justify-content: center;
     align-items: center;
     padding: 12px 16px;
+    margin-bottom: 50px;
 
     font: normal 600 20px/150% var(--inter);
+    z-index: 1;
 }
 
 .header_area .main_site .main_content .btn_main .wa_btn>i{
@@ -227,7 +188,82 @@ nav i{
 /* End Banner */
 
 /* Responsive */
-@media(max-width: 700px){
+
+@media (max-width:900px) {
+    /* Start Navbar */
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links ul li a{
+        text-decoration: none;
+        font: normal 400 14px/17px var(--inter);
+        padding: 10px;
+        color: white;
+    }
+
+    .nav-links ul li:hover::after{
+        width: 0%;
+    }
+
+    nav i.bi.bi-list{
+        display: contents;
+        color: white;
+        padding: 10px 10px 10px 10px; /*Atas, Kanan, Bawah, Kiri*/        
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    nav i.bi.bi-x-lg{
+        display: contents;
+        color: white;
+        font-size: 14px;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: rgba(255, 122, 0, 1);
+        height: 100vh;
+        width: 221px;
+        top: 0;
+        right: -221px;
+        text-align: right;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+    /* End Navbar */
+
+    /* Start Banner */
+
+    .header_area .main_site .main_content .main_quote .quote{
+        font-family: 'Inter';
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 100%;
+        color: white;
+        padding: 0 0 0 0;
+    }
+
+    .header_area .main_site .main_content .main_quote .quote_folup{
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        color: white;
+        margin-top: 17px;
+        
+    }
+
+
+    /* End Banner */
+}
+
+@media (max-width: 700px){
 
     /* Start Navbar */
 
@@ -280,12 +316,19 @@ nav i{
     /* Start Banner */
 
     .header_area .main_site .main_content .main_quote .quote{
-        font: normal 800 36px/100% var(--inter);
+        font-family: 'Inter';
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 100%;
         color: white;
+        padding: 0 0 0 0;
     }
 
     .header_area .main_site .main_content .main_quote .quote_folup{
-        font: normal 500 12px/150% var(--inter);
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
         color: white;
         margin-top: 17px;
         
@@ -293,11 +336,11 @@ nav i{
 
     .header_area .main_site .main_content .main_quote{
         width: 280px;
-        margin-left: 35px;
+        margin-left: 20px;
     }
 
     .header_area .main_site .main_content .btn_main{
-        margin-left: 35px;
+        margin: 20px;
         margin-top: 22px;
     }
 
@@ -358,7 +401,6 @@ nav i{
         transition: 0.5s;
     
         margin-top: 200px;
-        right: 30px;
         display: flex;
         flex-direction: row;
         justify-content: center;
