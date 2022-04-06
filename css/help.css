@@ -35,6 +35,8 @@
     border-left: none;
     border-right: none;
     border-radius: 0%;
+    box-shadow: none;
+    padding-left: 0;
    
     
 }

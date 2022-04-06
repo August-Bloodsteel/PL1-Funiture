@@ -84,3 +84,19 @@
         justify-content: center;
     }
 }
+
+@media(max-width:1199px)
+{
+    /* .about .mantap 
+    {
+      display: flex;
+      flex-direction: column;   
+    } */
+
+    .about
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+}
