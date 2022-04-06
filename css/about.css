@@ -49,7 +49,7 @@
 
 /* responsive */
 
-@media(max-width: 700px)
+@media screen and (max-width: 700px)
 {
     .about .mantap
     {
@@ -87,13 +87,34 @@
     
 }
 
-@media(min-width:1199px)
+@media screen and (max-width: 1024px)
 {
-    /* .about .mantap 
+    .about .mantap
     {
-      display: flex;
-      flex-direction: column;   
-    } */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about .mantap h5
+    {
+        font-size: 24px;
+    }
+
+    .text h1
+    {
+        font-size: 36px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .services
+    {
+        width: 18rem;
+        display: inline-block;
+        text-align: justify;
+    
+    }
 
     .about
     {
@@ -101,8 +122,26 @@
         justify-content: center;
     }
 
+    
 }
 
+/* @media(min-width:1199px)
+{
+    .about .mantap 
+    {
+      display: flex;
+      flex-direction: column;   
+    }
+
+    .about
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+} */
+
+/* 
 @media(min-width: 701px)
 {
     .about .mantap
@@ -142,4 +181,5 @@
     {
         margin-bottom: 8rem;
     }
-}
+} */
+
