@@ -59,6 +59,44 @@
             $("#footer").load("footer.html");
         });
 
+        var fot = document.getElementById("footer");
+        var wab = document.getElementById("wa_btn");
+        var nav = document.getElementById("navbarbleb");
+        
+        // console.log(document.getElementById("footer").scrollHeight);
+        // window.onscroll = bleb()
+        document.body.addEventListener('scroll',()=>{
+            if(document.body.scrollTop > fot.offsetTop){
+                // $("#navbarbleb").fadeOut( "fast", function() {
+                //     document.getElementById("navbarbleb").className = "hidden";
+                // });
+                // $("#wa_btn").fadeOut( "fast", function() {
+                //     document.getElementById("wa_btn").className = "hidden";
+                // })
+                document.getElementById("navbarbleb").className = "hidden";
+                document.getElementById("wa_btn").className = "hidden";
+                
+            }
+            else{
+                document.getElementById("navbarbleb").className = "fixed-top";
+                document.getElementById("wa_btn").className = "wa_btn";
+                // $("#navbarbleb").fadeIn( "fast", function() {
+                //     document.getElementById("navbarbleb").className = "fixed-top";
+                // });
+                // // document.getElementById("navbarbleb").className = "fixed-top";
+                // $("#wa_btn").fadeIn( "fast", function() {
+                //     document.getElementById("wa_btn").className = "wa_btn";
+                // })
+            }
+        })
+
+        // function bleb(){
+        //     if(document.body.scrollTop > fot.scrollHeight){
+        //         console.log("Cihuy");
+        //     }
+        // }
+
+        
     </script>
     
 </body>

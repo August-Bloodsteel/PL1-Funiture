@@ -6,6 +6,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+    transition: 3s;
+}
+
+.hidden{
+    display: none;
 }
 
 nav img{
@@ -412,7 +417,6 @@ nav i{
         justify-content: center;
         align-items: center;
     
-        font: normal 600 14px/150% var(--inter);
         font-family: 'Inter';
         font-weight: 600;
         font-size: 14px;
