@@ -65,7 +65,7 @@ nav i{
 /* Start Banner */
 
 .header_area{
-    min-height: 100vh;
+    min-height: 946px;
     width: 100%;
     background-image: url(../img/banner.png);
     background-position: center;

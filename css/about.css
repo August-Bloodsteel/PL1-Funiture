@@ -84,7 +84,23 @@
         justify-content: center;
     }
 
-    
+    .about .services p
+    {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        text-align: left;
+    }
+
+    .body
+    {
+        height: 70vh;
+        /* background-color: aqua; */
+    }
+        
 }
 
 @media screen and (max-width: 1024px)
