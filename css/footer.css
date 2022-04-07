@@ -164,11 +164,13 @@
 
     .footer_area .footer_content .subscribe_box{
         width: 290px;
+        height: 44px;
     }
 
     .footer_area .footer_content .subscribe_box .btn_sub{
         margin: 2px;
-        width: 107px;
+        width: 77px;
+        height: 34px;
         font-size: 12px;
         transition: 0.5s;
     }
@@ -181,5 +183,9 @@
     .footer_area .footer_content .row.copy{
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .footer_area .footer_content .subscribe_box input.form_sub{
+        margin: 7px 5px;
     }
 }
