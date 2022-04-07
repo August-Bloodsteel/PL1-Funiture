@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <!-- Bootsrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -18,55 +20,503 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Furnice.</title>
-    
 </head>
+
 <body>
 
-    <!-- Include Header -->
-    <div id="header"></div>
+
+    <header class="header_area" id="header">
+        <!-- start Navbar Content -->
+        <div class="main_menu">
+
+            <nav class="fixed-top" id="navbarbleb">
+                <a href="index.html"><img src="img/navbar_logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><i class="bi bi-x-lg" onclick="hideMenu()"></i></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#why">About Us</a></li>
+                        <li><a href="#produk">Product</a></li>
+                        <li><a href="#testimoni">Testimoni</a></li>
+                        <li><a href="#help">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="bi bi-list" onclick="showMenu()"></i>
+            </nav>
+
+        </div>
+        <!-- End Navbar Content -->
+
+        <!-- Start Banner Content -->
+        <div class="main_site">
+
+            <div class="main_content">
+
+                <div class="row">
+                    <div class="d-flex col-sm-10 offset-sm-1 col-md-6 col-lg-6">
+                        <div class="main_quote">
+                            <h2 class="quote">Your Home is Heaven</h2>
+                            <p class="quote_folup">Ciptakan suasana rumah Anda seperti surga dengan furniture minimalis
+                                yang ekonomis.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="d-flex col-sm-10 offset-sm-1 col-md-10 col-lg-10">
+
+                        <div class="btn_main">
+                            <a href="" class="buy_btn">Buy Now</a>
+                        </div>
+
+                        <div class="btn_main">
+                            <a href="" class="explore_btn">Explore</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="" class="wa_btn" id="wa_btn"><i class="bi bi-whatsapp"></i>WhatsApp</a>
+
+            </div>
+
+        </div>
+        <!-- Start Banner Content -->
+    </header>
+
+    <!-- =========================== End Header Area =========================== -->
 
 
-<!-- =========================== Scripts Area =========================== -->
+    <!-- =========================== Scripts Area =========================== -->
     <!-- Include why -->
 
-    <div id="why"></div>
-    <div id="produk"></div>
-    <div id="people"></div>
-    <div id="help"></div>
+    <div class="container body" id="why">
+        <div class="text pt-3 ">
+            <h1> Why <br>choosing us?</h1>
+        </div>
+        <!-- card -->
+
+        <div class=" about pt-5 ">
+            <div class="mantap d-flex justify-content-between">
+
+                <div class="   col-md-3 ">
+                    <div class="services">
+                        <div class="services-img text-left py-4">
+                            <img src="img/check-circle.png" alt="Services-1">
+                        </div>
+                        <div class="text-left">
+                            <h5 class=" text ">Kualitas Terjamin</h5>
+                            <p class=" text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor nisl lacus venenatis,
+                                integer ipsum sed facilisis consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="  col-md-3">
+                    <div class="services">
+                        <div class="services-img text-left py-4">
+                            <img src="img/check-circle.png" alt="Services-1">
+                        </div>
+                        <div class="text-left">
+                            <h5 class=" text ">Harga Bersaing</h5>
+                            <p class=" text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor nisl lacus venenatis,
+                                integer ipsum sed facilisis consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-md-3">
+                    <div class="services">
+                        <div class="services-img text-left py-4">
+                            <img src="img/check-circle.png" alt="Services-1">
+                        </div>
+                        <div class="text-left">
+                            <h5 class=" text ">Banyak pilihan</h5>
+                            <p class=" text-secondary">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor nisl lacus venenatis,
+                                integer ipsum sed facilisis consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <!-- end card -->
+    </div>
+    <div class="siap d-flex justify-content-center flex-column pt-5" id="produk">
+        <!-- title -->
+        <div class="special text text-center ">
+            <h4>Special Product for You</h4>
+        </div>
+        <!-- end title -->
+
+        <!-- card -->
+        <div class="main-card  ">
+            <div class=" produk-card  ">
+                <div class="gg d-flex justify-content-around ">
+
+                    <!-- produk 1 -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="kotak-luar pt-3">
+                            <div class="kotak1 container d-flex justify-content-center">
+                                <div class="kotak2 py-4">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="img/modern-chair.png" alt="Services-1">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="harga card-body text-left ">
+                                <span class="text">modern chair</span>
+                                <h3 class="text">
+                                    Rp. 150.000
+                                </h3>
+                            </div>
+
+                            <div class="cart container">
+                                <div class="cart-in justify-content-center align-items-center d-flex flex-row ">
+                                    <img src="img/shopping-cart.png" alt="">
+                                    <h5 class="text text-center pt-2">Add To Cart</h5>
+                                </div>
+                            </div>
+
+                            <div class="star">
+                                <div class="star-in">
+                                    <img src="img/Star 2.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- end produk 1 -->
+
+                    <!-- produk 2 -->
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="kotak-luar pt-3">
+                            <div class="kotak1 container d-flex justify-content-center">
+                                <div class="kotak2 py-4">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="img/modern-table.png" alt="Services-1">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="harga card-body text-left ">
+                                <span class="text">modern table</span>
+                                <h3 class="text">
+                                    Rp. 150.000
+                                </h3>
+                            </div>
+
+                            <div class="cart container">
+                                <div class="cart-in justify-content-center align-items-center d-flex flex-row ">
+                                    <img src="img/shopping-cart.png" alt="">
+                                    <h5 class="text text-center pt-2">Add To Cart</h5>
+                                </div>
+                            </div>
+
+                            <div class="star">
+                                <div class="star-in">
+                                    <img src="img/Star 2.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end produk 2 -->
+
+
+                    <!-- produk 3 -->
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="kotak-luar pt-3">
+                            <div class="kotak1 container d-flex justify-content-center">
+                                <div class="kotak2 py-4">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="img/modern-lamp.png" alt="Services-1">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="harga card-body text-left ">
+                                <span class="text">modern lamp</span>
+                                <h3 class="text">
+                                    Rp. 150.000
+                                </h3>
+                            </div>
+
+                            <div class="cart container">
+                                <div class="cart-in justify-content-center align-items-center d-flex flex-row ">
+                                    <img src="img/shopping-cart.png" alt="">
+                                    <h5 class="text text-center pt-2">Add To Cart</h5>
+                                </div>
+                            </div>
+
+                            <div class="star">
+                                <div class="star-in">
+                                    <img src="img/Star 2.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- end produk 3 -->
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end card -->
+    </div>
+    <div class="container people-main " id="testimoni">
+        <div class="people">
+            <h4>What the people think <br> about us</h4>
+        </div>
+
+
+        <!-- carousel -->
+        <div class="car">
+            <div id="carouselExampleFade" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active ">
+                        <div class="gambar d-flex justify-content-center">
+                            <img src="img/Ellipse.png" alt="">
+                        </div>
+                        <div class="container d-flex justify-content-center">
+                            <div
+                                class="square container col-md-12 d-flex justify-content-center align-items-center flex-column">
+
+                                <img src="img/Group 10.png" alt="">
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Dolor nisl lacus
+                                    venenatis, integer ipsum sed <br> facilisis consequat.</h5>
+
+                                <div class="nama text text-center">
+                                    <h3>Sri Rahayu</h3>
+                                    <h5>CEO of perabotan bali</h5>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <div class="gambar d-flex justify-content-center">
+                            <img src="img/review2.png" alt="">
+                        </div>
+                        <div class="container d-flex justify-content-center">
+                            <div
+                                class="square container col-md-12 d-flex justify-content-center align-items-center flex-column">
+
+                                <img src="img/Group 10.png" alt="">
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Dolor nisl lacus
+                                    venenatis, integer ipsum sed <br> facilisis consequat.</h5>
+
+                                <div class="nama text text-center">
+                                    <h3>Sri Rahayu</h3>
+                                    <h5>CEO of perabotan bali</h5>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item  ">
+                        <div class="gambar d-flex justify-content-center">
+                            <img src="img/review3.png" alt="">
+                        </div>
+                        <div class="container d-flex justify-content-center">
+                            <div
+                                class="square container col-md-12 d-flex justify-content-center align-items-center flex-column">
+
+                                <img src="img/Group 10.png" alt="">
+                                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Dolor nisl lacus
+                                    venenatis, integer ipsum sed <br> facilisis consequat.</h5>
+
+                                <div class="nama text text-center">
+                                    <h3>Sri Rahayu</h3>
+                                    <h5>CEO of perabotan bali</h5>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <div class="lingkaran d-flex justify-content-center align-items-center">
+                            <span class=" carousel-control-prev-icon"></span>
+                        </div>
+
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <div class="lingkaran d-flex justify-content-center align-items-center">
+                            <span class=" carousel-control-next-icon"></span>
+                        </div>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <!-- end carousel -->
+
+
+
+    </div>
+    .<div class="help container mb-5" id="help">
+        <div class="need d-flex justify-content-center">
+            <h1>Need any help?</h1>
+        </div>
+        <div class="gm d-flex justify-content-around align-items-center">
+            <div class="gambar">
+                <img src="img/Group 15.png" alt="">
+            </div>
+
+            <div class="form">
+                <form>
+
+                    <div class=" mb-3 col-md-10 pt-5">
+                        <label class="form-label">Subjek</label>
+                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                            placeholder="Masukan subjek pesan anda">
+                    </div>
+
+                    <div class="mb-3 col-md-10 pt-4 ">
+                        <label class="form-label">Nama</label>
+                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                            placeholder="Masukan nama anda">
+                    </div>
+
+                    <div class="mb-3 col-md-10 pt-3">
+                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Masukkan e-mail anda">
+                    </div>
+
+                    <div class="mb-3 col-md-10 pt-4">
+                        <label for="exampleInputPassword1" class="form-label">Pesan</label>
+                        <textarea class="form" name="" id="" cols="58" rows="4"
+                            placeholder="Masukan pesan atau keluhan anda"></textarea>
+                    </div>
+                    <div class="bt ">
+                        <button type="submit" class="btn btn-warning ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Include Footer -->
-    <div id="footer"></div>
+    <!-- =========================== Start Footer Area =========================== -->
+    <footer class="footer_area" id="footer">
+        <div class="footer_content">
+
+            <!-- Footer Title -->
+            <div class="row d-flex">
+
+                .
+                <div class="col-sm-10 col-md-4 col-lg-3 kol kolom1">
+                    <img class="footer_logo" src="./img/navbar_logo.png" alt="footer_logo">
+                    <p>Furnice adalah Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolor nisl lacus
+                        venenatis, integer ipsum sed facilisis consequat.</p>
+                </div>
+                <div class="col-sm-10 col-md-4 col-lg-2 kol kolom2">
+                    <h5 class="footer_title">Contact</h5>
+                    <p>Jl. Dewata No.1, Denpasar<br> Bali (62547)</p>
+                    <a href=""><i class="bi bi-telephone"></i></a>
+                    <a href=""><i class="bi bi-envelope"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                </div>
+
+                <div class="col-sm-10 col-md-3 col-lg-2 d-flex flex-column kol kolom3">
+                    <h5 class="footer_title">Quick Link</h5>
+                    <a class="qlinks" href="#header">Home</a>
+                    <a class="qlinks" href="#people">About Us</a>
+                    <a class="qlinks" href="#produk">Product</a>
+                </div>
+
+                <div class="col-sm-11 col-md-10 col-lg-4 kol kolom4">
+                    <h5 class="footer_title">Get a new product info</h5>
+                    <form action="#">
+
+                        <div class="subscribe_box d-flex">
+                            <input class="form_sub" type="text" placeholder="Masukkan e-mail anda">
+                            <button class="btn_sub" type="">Subscribe</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="row copy">
+                <div class="col-md-12">
+                    <p>&copyCopyright Lojihub | Designed by Erga - Developed by Radit & Rahbaja</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+    // console.log(document.getElementById("footer").scrollHeight);
+    </script>
+    <!-- =========================== End Footer Area =========================== -->
 
     <!-- =========================== Scripts Area =========================== -->
 
 
     <!-- Jquery JS -->
     <script src="./js/jquery3.6.0.js"></script>
-    
+
     <!-- Bootsrap JS -->
     <script src="./js/bootstrap.min.js"></script>
     <script>
-
-        $(function(){
-            $("#header").load("header.html");
-            $("#why").load("why.html");
-            $("#produk").load("produk.html");
-            $("#people").load("people.html");
-            $("#help").load("help.html");
-        });
-
-        $(function(){
-            $("#footer").load("footer.html");
-        });
-
         var fot = document.getElementById("footer");
         var wab = document.getElementById("wa_btn");
         var nav = document.getElementById("navbarbleb");
-        
+
         // console.log(document.getElementById("footer").scrollHeight);
         // window.onscroll = bleb()
-        document.body.addEventListener('scroll',()=>{
-            if(document.body.scrollTop > fot.offsetTop){
+        document.body.addEventListener('scroll', () => {
+            if (document.body.scrollTop > fot.offsetTop) {
                 // $("#navbarbleb").fadeOut( "fast", function() {
                 //     document.getElementById("navbarbleb").className = "hidden";
                 // });
@@ -74,10 +524,10 @@
                 //     document.getElementById("wa_btn").className = "hidden";
                 // })
                 document.getElementById("navbarbleb").className = "hidden";
-                document.getElementById("wa_btn").className = "hidden";  
-                
+                document.getElementById("wa_btn").className = "hidden";
+
             }
-            else{
+            else {
                 document.getElementById("navbarbleb").className = "fixed-top";
                 document.getElementById("wa_btn").className = "wa_btn";
                 // $("#navbarbleb").fadeIn( "fast", function() {
@@ -96,8 +546,22 @@
         //     }
         // }
 
-        
     </script>
-    
+    <script>
+
+        // console.log("Cihuy");
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-221px";
+        }
+
+    </script>
+
 </body>
+
 </html>
