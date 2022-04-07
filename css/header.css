@@ -6,7 +6,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
-    transition: 3s;
+    transition: 0.5s;
 }
 
 .hidden{

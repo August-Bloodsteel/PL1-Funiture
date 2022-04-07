@@ -26,14 +26,20 @@
 }
 
 .footer_area .footer_content  .footer_title{
-    font: normal 600 24px/120% var(--inter);
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
     color: white;
     margin-top: 10px;
     margin-bottom: 25px;
 }
 
 .footer_area .footer_content p{
-    font: normal 400 14px/150% var(--inter);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
     color: white;
     letter-spacing: 0.005em;
 }
@@ -41,7 +47,10 @@
 .footer_area .footer_content a.qlinks{
     text-decoration: none;
     padding-bottom: 27px;
-    font: normal 400 14px/150% var(--inter);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
     color: white;
     letter-spacing: 0.005em;
 }
@@ -58,10 +67,12 @@
     background-color: white;
 }
 
-.footer_area .footer_content .subscribe_box .form_sub{
+
+.footer_area .footer_content .subscribe_box input.form_sub{
     position: relative;
-    display: inline-block;
-    border: none;
+    box-shadow: none;
+    outline: none;
+    border-color: transparent;
     background-color: transparent;
     margin: 10px;
 }
@@ -73,13 +84,16 @@
     margin: 2px;
     width: 107px;
     background-color: rgba(255, 122, 0, 1);
-    font: normal 700 14px/50% var(--inter);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 50%;
     color: white;
     transition: 0.5s;
 }
 
 .footer_area .footer_content .subscribe_box .btn_sub:hover{
-    box-shadow: var(--shadow);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* responsive */
@@ -119,7 +133,7 @@
     }
 }
 
-@media(max-width: 700px)
+@media (max-width: 576px)
 {
     .row
     {
@@ -129,7 +143,8 @@
 
     .footer_area
     {
-        height: 912px;
+        height: auto;
+        padding-top: 25px;
     }
 
     .row.copy p
@@ -140,5 +155,30 @@
     .footer_area .footer_content .container .footer_title
     {
         font-size: 20px;
+    }
+
+    .footer_area .footer_content .row .kolom3{
+        margin-top: 16px;
+    }
+
+    .footer_area .footer_content .subscribe_box{
+        width: 290px;
+    }
+
+    .footer_area .footer_content .subscribe_box .btn_sub{
+        margin: 2px;
+        width: 107px;
+        font-size: 12px;
+        transition: 0.5s;
+    }
+
+    .footer_area{
+        padding: 38px 0px 1px 0px;
+    }
+    
+
+    .footer_area .footer_content .row.copy{
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
