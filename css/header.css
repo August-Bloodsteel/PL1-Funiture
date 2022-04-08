@@ -176,7 +176,7 @@ nav i{
     transition: 0.5s;
 
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-evenly;
     align-items: center;
     padding: 12px 16px;
@@ -192,14 +192,14 @@ nav i{
     right: 80px;
 }
 
-.header_area .main_site .main_content .btn_main .wa a
+/* .header_area .main_site .main_content .btn_main .wa a
 {
     padding-left: 10px;
-}
-
-/* .header_area .main_site .main_content .btn_main .wa_btn>i{
-    padding-left: 10px;
 } */
+
+.header_area .main_site .main_content .btn_main .wa_btn>i{
+    padding-left: 10px;
+}
 
 .header_area .main_site .main_content .btn_main .buy_btn:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
@@ -462,6 +462,8 @@ nav i{
         line-height: 150%;
         bottom: 40px;
         right: 40px;
+        display: flex;
+        justify-content: space-between;
 
         z-index: 2;
     }
